@@ -1,0 +1,76 @@
+=======================
+Test Case Documentation
+=======================
+
+Author: Hagar Talaat
+Project: E-Commerce Automation (Magento demo site)
+Framework: Selenium + Java + TestNG + Maven
+Date: June 2025
+
+------------------------------------------------------------
+Test Case 1: Valid Product Search
+------------------------------------------------------------
+• Objective:
+  Verify that the user can successfully search for an existing product.
+
+• Precondition:
+  User is on the Magento demo store homepage.
+
+• Test Steps:
+  1. Navigate to https://magento.softwaretestingboard.com
+  2. Enter the keyword "hoodie" in the search input field.
+  3. Press the Enter key.
+
+• Expected Outcome:
+  - The search results page is displayed.
+  - At least one product is listed matching the keyword "hoodie".
+
+• Pass/Fail Criteria:
+  - PASS: Product grid is shown with search results.
+  - FAIL: No product results found or incorrect page loaded.
+
+------------------------------------------------------------
+Test Case 2: Add Item to Cart
+------------------------------------------------------------
+• Objective:
+  Ensure the user can add a product to the cart.
+
+• Precondition:
+  User is on the Magento store homepage.
+
+• Test Steps:
+  1. Search for "hoodie" using the search bar.
+  2. Click on the first product image.
+  3. Select a size.
+  4. Select a color (if applicable).
+  5. Click "Add to Cart".
+
+• Expected Outcome:
+  - Product is added to cart with correct options.
+  - Quantity is 1.
+
+• Pass/Fail Criteria:
+  - PASS: Quantity updated and checkout URL loaded.
+  - FAIL: Cart not updated or navigation failed.
+
+------------------------------------------------------------
+Test Case 3: Invalid Product Search
+------------------------------------------------------------
+• Objective:
+  Confirm that the site shows a proper message when a user searches for an invalid or non-existent product.
+
+• Precondition:
+  User is on the Magento demo homepage.
+
+• Test Steps:
+  1. Navigate to https://magento.softwaretestingboard.com
+  2. Enter the keyword "asdkjhasd" in the search bar.
+  3. Press Enter to search.
+
+• Expected Outcome:
+  - A message is displayed saying "Your search returned no results."
+  - No products are shown.
+
+• Pass/Fail Criteria:
+  - PASS: Message appears, and product list is empty.
+  - FAIL: Unexpected behavior or products appear.

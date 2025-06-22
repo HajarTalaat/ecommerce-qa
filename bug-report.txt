@@ -1,0 +1,19 @@
+====================
+Bug Report
+====================
+
+🪲 Bug 1: Ad iframe blocks product image click
+- Location: Product search results page
+- Description: Sometimes clicking a product is blocked by an ad iframe.
+- Severity: Medium
+- Workaround: Used JavaScript Executor to force click below ad layer.
+
+🪲 Bug 2: Size or color selection fails if not available
+- Location: Product page
+- Description: Some products don’t have available color/size options, causing test failure.
+- Severity: Low
+- Fix: Added check to verify element exists before clicking.
+
+No other functional bugs found in the 3 test cases.
+
+-----------------------

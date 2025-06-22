@@ -1,0 +1,26 @@
+=========================
+Basic Security Validation
+=========================
+
+1. ✅ Input Validation Check
+- Fields Tested: Search bar
+- Method: Entered script tags (`<script>alert('xss')</script>`)
+- Result: Input was sanitized. No alert triggered.
+- Verdict: PASS
+
+2. ✅ SQL Injection Attempt
+- Fields Tested: Search bar
+- Method: Entered `' OR 1=1 --`
+- Result: No data leaked or error shown.
+- Verdict: PASS
+
+3. ✅ XSS Vulnerability Check
+- Fields Tested: Search bar
+- Method: Injected JavaScript code
+- Result: Reflected input was sanitized in UI.
+- Verdict: PASS
+
+Conclusion:
+- No critical security issues were found during exploratory testing of the UI input fields.
+
+-----------------------

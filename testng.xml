@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="EcommerceSmokeSuite">
+    <test name="Smoke Tests">
+        <classes>
+            <class name="com.hagar.automation.tests.ProductSearchTest"/>
+            <class name="com.hagar.automation.tests.AddToCartTest"/>
+            <class name="com.hagar.automation.tests.InvalidProductSearchTest"/>
+        </classes>
+    </test>
+</suite>
