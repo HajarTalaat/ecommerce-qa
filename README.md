@@ -14,7 +14,7 @@ This project automates 3 functional test cases for the Magento Demo Store using:
 
 ## ✅ Test Cases
 1. **Valid Product Search**
-2. **Add Item to Cart and Modify Quantity**
+2. **Add Item to Cart**
 3. **Invalid Product Search**
 
 Each test case covers a critical path or an edge case scenario.
